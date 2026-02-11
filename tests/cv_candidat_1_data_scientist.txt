@@ -1,0 +1,138 @@
+MARIE DUBOIS
+Data Scientist Senior
+
+Email : marie.dubois@email.com
+Téléphone : +33 6 12 34 56 78
+LinkedIn : linkedin.com/in/marie-dubois
+Localisation : Paris, France
+
+═══════════════════════════════════════════════════════════════
+
+RÉSUMÉ PROFESSIONNEL
+
+Data Scientist expérimentée avec 7 ans d'expertise dans le secteur bancaire et financier. Spécialisée en machine learning, modélisation prédictive et analyse de risques. Passionnée par l'IA explicable et la conformité réglementaire. Forte capacité à transformer des problématiques métier complexes en solutions data-driven actionnables.
+
+═══════════════════════════════════════════════════════════════
+
+EXPÉRIENCE PROFESSIONNELLE
+
+Data Scientist Senior | BNP Paribas | Paris
+Septembre 2020 - Présent (4 ans)
+
+• Développement de modèles de credit scoring utilisant XGBoost et Random Forest avec amélioration de 15% de la précision
+• Création d'un système de détection de fraude en temps réel (AML) basé sur des réseaux neurones (precision 92%)
+• Implémentation de solutions MLOps avec Docker, Kubernetes et MLflow pour industrialisation des modèles
+• Collaboration étroite avec les équipes risque et conformité pour respecter Bâle III et IFRS 9
+• Gestion d'une équipe de 3 data scientists junior
+• Technologies : Python, Spark, SQL, TensorFlow, scikit-learn, Tableau
+
+Data Scientist | Société Générale | Paris  
+Janvier 2018 - Août 2020 (2,5 ans)
+
+• Développement de modèles prédictifs pour l'optimisation des portefeuilles d'investissement
+• Analyse de séries temporelles pour forecasting des marchés financiers
+• Création de dashboards interactifs Power BI pour les traders
+• Automatisation de pipelines ETL avec Python et Airflow
+• Technologies : Python, R, SQL, pandas, numpy, matplotlib
+
+Analyste Quantitatif Junior | Crédit Agricole | Lyon
+Septembre 2016 - Décembre 2017 (1,5 an)
+
+• Support aux modèles de risque de marché (VaR, stress testing)
+• Backtesting de stratégies de trading algorithmique
+• Analyse de données de marché et reporting réglementaire
+• Technologies : R, Excel VBA, Bloomberg Terminal
+
+═══════════════════════════════════════════════════════════════
+
+FORMATION
+
+Master 2 Data Science & Intelligence Artificielle
+Université Paris-Dauphine | 2016
+Spécialisation : Machine Learning, Deep Learning, Big Data
+
+Diplôme d'Ingénieur - Mathématiques Appliquées
+École Centrale Paris | 2015
+Major de promotion, mention Très Bien
+
+Classes Préparatoires MPSI/MP*
+Lycée Louis-le-Grand | 2011-2013
+
+═══════════════════════════════════════════════════════════════
+
+COMPÉTENCES TECHNIQUES
+
+Langages de Programmation :
+• Python (expert) : pandas, numpy, scikit-learn, TensorFlow, PyTorch, Keras
+• R (avancé) : tidyverse, caret, ggplot2
+• SQL (expert) : PostgreSQL, MySQL, Oracle
+• Spark / PySpark (intermédiaire)
+
+Machine Learning & IA :
+• Supervised Learning : régression, classification, arbres de décision, SVM, ensemble methods
+• Deep Learning : réseaux neurones, CNN, RNN, LSTM, transformers
+• NLP : traitement du langage naturel, embeddings, BERT
+• Time Series : ARIMA, Prophet, réseaux récurrents
+• Reinforcement Learning : Q-Learning, DQN
+
+Big Data & MLOps :
+• Spark, Hadoop, Hive
+• Docker, Kubernetes
+• MLflow, DVC, Git
+• Airflow, Jenkins
+• AWS (S3, EC2, SageMaker), Azure
+
+Outils de Visualisation :
+• Tableau, Power BI
+• Plotly, Seaborn, matplotlib
+
+Finance & Risque :
+• Modèles de risque de crédit (PD, LGD, EAD)
+• Stress testing, backtesting
+• Bâle II/III, IFRS 9, MiFID II
+• Détection de fraude et AML/KYC
+
+═══════════════════════════════════════════════════════════════
+
+SOFT SKILLS
+
+• Leadership et gestion d'équipe
+• Communication auprès de publics techniques et non-techniques
+• Esprit analytique et résolution de problèmes complexes
+• Rigueur et attention aux détails
+• Capacité à travailler sous pression
+• Pédagogie et mentorat
+• Adaptabilité et apprentissage continu
+• Collaboration inter-équipes
+
+═══════════════════════════════════════════════════════════════
+
+LANGUES
+
+• Français : Langue maternelle
+• Anglais : Courant (C1) - TOEIC 950/990
+• Espagnol : Intermédiaire (B1)
+
+═══════════════════════════════════════════════════════════════
+
+CERTIFICATIONS
+
+• AWS Certified Machine Learning - Specialty (2023)
+• Professional Scrum Master I (PSM I) (2022)
+• Certification FRM (Financial Risk Manager) en cours
+
+═══════════════════════════════════════════════════════════════
+
+PUBLICATIONS & CONFÉRENCES
+
+• "Explainable AI for Credit Risk Models in Banking" - Finance & IA Conference Paris 2023
+• Article Medium : "Implementing MLOps in Banking : Best Practices" (5000+ vues)
+
+═══════════════════════════════════════════════════════════════
+
+CENTRES D'INTÉRÊT
+
+• Participation à des hackathons IA (1er prix Kaggle Competition - Credit Default 2022)
+• Contribution open-source (scikit-learn, pandas)
+• Veille technologique IA et finance
+• Yoga et course à pied
