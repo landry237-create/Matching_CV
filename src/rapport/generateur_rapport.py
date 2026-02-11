@@ -4,10 +4,9 @@ Produit un rapport explicatif complet du matching
 Auteur : Architecture IA Banque
 """
 
-from typing import Dict, Any
-from typing import List, Optional
+from typing import Dict, Any, List, Optional
 from datetime import datetime
-from src.coeur.journalisation import JournaliseurBancaire as JournalisationBancaire
+from src.coeur.journalisation import journaliseur
 
 
 class GenerateurRapport:
@@ -17,7 +16,7 @@ class GenerateurRapport:
     """
     
     def __init__(self):
-        self.journaliseur = JournalisationBancaire.obtenir_journaliseur()
+        self.journaliseur = journaliseur
     
     def generer_rapport_complet(
         self,
