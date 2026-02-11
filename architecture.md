@@ -1,12 +1,12 @@
 text
 
-# 🏛️ Architecture Détaillée - Système de Matching Bancaire
+# 🏛️ Architecture Détaillée - Système de Matching
 
 ## Document Technique Approfondi
 
 Version : 1.0.0  
 Date : Février 2026  
-Classification : Confidentiel - Usage Interne Bancaire
+Classification : Confidentiel - Usage Interne
 
 ---
 
