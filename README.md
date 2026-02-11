@@ -59,7 +59,7 @@ Score Final = 45% Compétences + 25% Expérience + 15% Formation
 ## 🏗️ Architecture Technique
 
 ```
-projet_matching_bancaire/
+projet_matching/
 │
 ├── src/
 │   ├── coeur/
@@ -118,7 +118,7 @@ projet_matching_bancaire/
 ```bash
 # 1. Cloner le projet
 git clone <url-du-projet>
-cd projet_matching_bancaire
+cd projet_matching
 
 # 2. Créer un environnement virtuel
 python -m venv venv
