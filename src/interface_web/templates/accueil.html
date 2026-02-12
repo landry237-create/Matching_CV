@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Matching CV/Offre - Landry Internationale</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- EN-TÊTE PREMIUM -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    
+    <header class="en-tete">
+        <div class="conteneur">
+            <div class="logo-section">
+                <div class="logo-icone">🏛️</div>
+                <div class="logo-texte">
+                    <h1>Landry Internationale</h1>
+                    <p class="sous-titre">Excellence en Recrutement IA</p>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="#" class="nav-lien actif">Matching</a>
+                <a href="http://localhost:8000/documentation" class="nav-lien">Documentation</a>
+                <a href="http://localhost:8000/support" class="nav-lien">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SECTION HERO -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    
+    <section class="hero">
+        <div class="conteneur">
+            <div class="hero-contenu">
+                <h2 class="hero-titre">
+                    Système Intelligent de Matching <span class="texte-dore">CV / Offre</span>
+                </h2>
+                <p class="hero-description">
+                    Solution d'intelligence artificielle de pointe pour évaluer la correspondance 
+                    entre candidats et postes avec précision, transparence et conformité totale.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">🔒 Conforme RGPD</span>
+                    <span class="badge">🎯 IA Explicable</span>
+                    <span class="badge">⚖️ Non-discriminatoire</span>
+                    <span class="badge">📊 Audit-ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SECTION FORMULAIRE PRINCIPAL -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    
+    <main class="conteneur principale">
+        <div class="formulaire-conteneur">
+            <form id="formulaire-analyse" class="formulaire-analyse">
+                
+                <!-- Upload CV -->
+                <div class="groupe-formulaire">
+                    <label for="fichier-cv" class="label-formulaire">
+                        <span class="icone-label">📄</span>
+                        Curriculum Vitae du Candidat
+                    </label>
+                    <div class="zone-upload" id="zone-upload">
+                        <input 
+                            type="file" 
+                            id="fichier-cv" 
+                            name="fichier_cv" 
+                            accept=".pdf,.docx,.txt"
+                            required
+                        >
+                        <div class="upload-placeholder">
+                            <div class="upload-icone">⬆️</div>
+                            <p class="upload-texte-principal">Glissez-déposez votre CV ici</p>
+                            <p class="upload-texte-secondaire">ou cliquez pour sélectionner</p>
+                            <p class="upload-formats">Formats acceptés : PDF, DOCX, TXT (max 10 MB)</p>
+                        </div>
+                        <div class="fichier-selectionne" id="fichier-selectionne" style="display: none;">
+                            <span class="fichier-icone">📎</span>
+                            <span class="fichier-nom" id="nom-fichier"></span>
+                            <button type="button" class="bouton-supprimer" id="bouton-supprimer">✕</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zone de texte offre -->
+                <div class="groupe-formulaire">
+                    <label for="texte-offre" class="label-formulaire">
+                        <span class="icone-label">💼</span>
+                        Description de l'Offre d'Emploi
+                    </label>
+                    <textarea 
+                        id="texte-offre" 
+                        name="texte_offre" 
+                        class="textarea-offre"
+                        placeholder="Collez ici le contenu complet de l'offre d'emploi incluant :&#10;• Titre du poste&#10;• Compétences techniques requises&#10;• Années d'expérience souhaitées&#10;• Niveau de formation exigé&#10;• Langues nécessaires&#10;• Responsabilités du poste&#10;• Soft skills recherchées"
+                        rows="12"
+                        required
+                    ></textarea>
+                    <div class="compteur-caracteres">
+                        <span id="compteur">0</span> caractères
+                    </div>
+                </div>
+
+                <!-- Bouton d'analyse -->
+                <div class="groupe-bouton">
+                    <button type="submit" class="bouton-principal" id="bouton-analyser">
+                        <span class="bouton-icone">🔍</span>
+                        <span class="bouton-texte">Lancer l'Analyse IA</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- SECTION RÉSULTATS -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        
+        <div id="section-resultats" class="section-resultats" style="display: none;">
+            
+            <!-- Carte Score Principal -->
+            <div class="carte-score">
+                <div class="carte-en-tete">
+                    <h3 class="carte-titre">Score de Correspondance</h3>
+                    <span class="badge-statut" id="badge-statut">Analyse terminée</span>
+                </div>
+                
+                <div class="score-principal">
+                    <div class="score-cercle">
+                        <svg class="score-svg" viewBox="0 0 200 200">
+                            <circle 
+                                class="score-fond" 
+                                cx="100" 
+                                cy="100" 
+                                r="85" 
+                                fill="none" 
+                                stroke="#e9ecef" 
+                                stroke-width="12"
+                            />
+                            <circle 
+                                id="cercle-score" 
+                                class="score-progression" 
+                                cx="100" 
+                                cy="100" 
+                                r="85" 
+                                fill="none" 
+                                stroke-width="12" 
+                                stroke-linecap="round"
+                                transform="rotate(-90 100 100)"
+                            />
+                        </svg>
+                        <div class="score-valeur">
+                            <span id="valeur-score" class="score-nombre">0</span>
+                            <span class="score-max">/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="score-details">
+                        <h4 id="niveau-correspondance" class="niveau-titre">Calcul en cours...</h4>
+                        <p id="synthese-executive" class="synthese-texte">
+                            Analyse en cours de traitement...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Détail des Sous-Scores -->
+            <div class="carte-sous-scores">
+                <h3 class="carte-titre">Analyse Détaillée par Critère</h3>
+                <div id="liste-sous-scores" class="liste-sous-scores">
+                    <!-- Généré dynamiquement par JavaScript -->
+                </div>
+            </div>
+
+            <!-- Compétences -->
+            <div class="carte-competences">
+                <h3 class="carte-titre">Analyse des Compétences Techniques</h3>
+                
+                <div class="competences-grid">
+                    <div class="competences-section">
+                        <h4 class="section-titre">✅ Compétences Correspondantes</h4>
+                        <div id="competences-correspondantes" class="liste-tags"></div>
+                    </div>
+                    
+                    <div class="competences-section">
+                        <h4 class="section-titre">❌ Compétences Manquantes</h4>
+                        <div id="competences-manquantes" class="liste-tags"></div>
+                    </div>
+                    
+                    <div class="competences-section">
+                        <h4 class="section-titre">➕ Compétences Additionnelles</h4>
+                        <div id="competences-additionnelles" class="liste-tags"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommandations -->
+            <div class="carte-recommandations">
+                <h3 class="carte-titre">💡 Recommandations Stratégiques</h3>
+                <ul id="liste-recommandations" class="liste-recommandations">
+                    <!-- Généré dynamiquement -->
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- ZONE DE CHARGEMENT -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        
+        <div id="zone-chargement" class="zone-chargement" style="display: none;">
+            <div class="spinner"></div>
+            <p class="texte-chargement">Analyse en cours...</p>
+            <p class="sous-texte-chargement" id="etape-chargement">
+                Extraction et traitement des données
+            </p>
+        </div>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- PIED DE PAGE -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    
+    <footer class="pied-page">
+        <div class="conteneur">
+            <div class="pied-contenu">
+                <div class="pied-section">
+                    <h4>Système de Matching IA</h4>
+                    <p>Solution professionnelle pour le recrutement bancaire</p>
+                </div>
+                <div class="pied-section">
+                    <h4>Conformité</h4>
+                    <ul class="pied-liste">
+                        <li>✓ Conforme RGPD</li>
+                        <li>✓ IA Explicable</li>
+                        <li>✓ Auditable</li>
+                    </ul>
+                </div>
+                <div class="pied-section">
+                    <h4>Support</h4>
+                    <ul class="pied-liste">
+                        <li><a href="http://localhost:8000/documentation">Documentation</a></li>
+                        <li><a href="http://localhost:8000/contact">Contact</a></li>
+                        <li><a href="http://localhost:8000/faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pied-copyright">
+                <p>&copy; 2025 Banque Internationale - Tous droits réservés | Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
